@@ -1,0 +1,223 @@
+/* =========================
+   1. BODY
+   ========================= */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   2. MAIN TITLE
+   ========================= */
+
+body > h1 {
+    text-align: center;
+    background-color: #1f4e78;
+    color: white;
+    padding: 25px;
+    margin: 0;
+}
+
+
+/* =========================
+   3. PROFILE IMAGE
+   ========================= */
+
+body > img {
+    display: block;
+    margin: 20px auto 10px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #1f4e78;
+}
+
+
+/* =========================
+   4. STUDENT NAME
+   ========================= */
+
+body > h2:first-of-type {
+    text-align: center;
+    color: #1f4e78;
+}
+
+
+/* =========================
+   5. H2 HEADINGS
+   ========================= */
+
+h2 {
+    color: #1f4e78;
+    border-left: 5px solid #1f4e78;
+    padding-left: 10px;
+    margin-top: 30px;
+}
+
+
+/* =========================
+   6. HORIZONTAL LINE
+   ========================= */
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #ddd;
+    margin: 25px 0;
+}
+
+
+/* =========================
+   7. CAREER OBJECTIVE
+   ========================= */
+
+h4 {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    font-weight: normal;
+    box-shadow: 0 2px 8px #ccc;
+}
+
+
+/* =========================
+   8. TABLE
+   ========================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 15px;
+}
+
+
+/* Table cells */
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+
+/* Table heading */
+
+th {
+    background-color: #1f4e78;
+    color: white;
+}
+
+
+/* Table row hover */
+
+tr:hover {
+    background-color: #eef5fa;
+}
+
+
+/* =========================
+   9. LISTS
+   ========================= */
+
+ul,
+ol {
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px #ddd;
+}
+
+
+li {
+    margin: 8px 0;
+}
+
+
+/* =========================
+   10. PROJECTS
+   ========================= */
+
+ol li {
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #f8fbff;
+    border-left: 4px solid #1f4e78;
+}
+
+
+/* =========================
+   11. BOLD TEXT
+   ========================= */
+
+b {
+    color: #1f4e78;
+    font-size: 18px;
+}
+
+
+/* =========================
+   12. CONTACT LINKS
+   ========================= */
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Mouse hover */
+
+a:hover {
+    color: #e63946;
+    text-decoration: underline;
+}
+
+
+/* =========================
+   13. PAGE SPACING
+   ========================= */
+
+body {
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+
+/* =========================
+   14. RESPONSIVE DESIGN
+   ========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    body > h1 {
+        font-size: 24px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 7px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+}

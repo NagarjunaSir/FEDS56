@@ -1,0 +1,303 @@
+/* ==============================
+   BASIC PAGE STYLING
+   ============================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("images/background.png");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #222;
+}
+
+
+/* ==============================
+   MAIN TABLE
+   ============================== */
+
+body > table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+
+/* ==============================
+   HEADER
+   ============================== */
+
+body > table tr:first-child {
+    background-color: #0D47A1;
+}
+
+body > table tr:first-child img {
+    max-width: 200px;
+    height: auto;
+}
+
+body > table tr:first-child input[type="text"] {
+    width: 65%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    padding: 12px 20px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #e68900;
+}
+
+
+/* ==============================
+   LOGIN / REGISTER / CART
+   ============================== */
+
+body > table tr:first-child font {
+    font-size: 16px;
+}
+
+body > table tr:first-child b {
+    cursor: pointer;
+}
+
+body > table tr:first-child b:hover {
+    color: #ffeb3b;
+}
+
+
+/* ==============================
+   CATEGORY MENU
+   ============================== */
+
+body > table tr:nth-child(2) {
+    background-color: #112345;
+}
+
+body > table tr:nth-child(2) td {
+    padding: 15px 10px;
+}
+
+body > table tr:nth-child(2) td td {
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+body > table tr:nth-child(2) td td:hover {
+    background-color: #1976D2;
+    color: yellow;
+}
+
+
+/* ==============================
+   MAIN BANNER
+   ============================== */
+
+body > table img[src*="banner.png"] {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* ==============================
+   SCROLLING BANNERS
+   ============================== */
+
+marquee {
+    background-color: #f5f5f5;
+    padding: 10px;
+}
+
+marquee img {
+    width: 600px;
+    height: 180px;
+    object-fit: cover;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+
+/* ==============================
+   FEATURED PRODUCTS TITLE
+   ============================== */
+
+body > table tr td font[size="5"] {
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+
+/* ==============================
+   PRODUCT SECTION
+   ============================== */
+
+body > table tr td img[src*=".jpg"] {
+    transition: transform 0.3s;
+}
+
+body > table tr td img[src*=".jpg"]:hover {
+    transform: scale(1.08);
+}
+
+
+/* Product name */
+
+h2 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+}
+
+
+/* Product price */
+
+h1 {
+    margin: 5px 0 15px;
+    font-size: 22px;
+    color: #e53935;
+}
+
+
+/* ==============================
+   ADD TO CART BUTTON
+   ============================== */
+
+input[type="button"] {
+    padding: 10px 18px;
+    background-color: #0D47A1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="button"]:hover {
+    background-color: #1565C0;
+    transform: scale(1.05);
+}
+
+
+/* ==============================
+   PRODUCT CELLS
+   ============================== */
+
+body > table tr td[align="center"] {
+    vertical-align: top;
+}
+
+body > table tr:nth-child(6) td,
+body > table tr:nth-child(7) td,
+body > table tr:nth-child(8) td {
+    padding: 25px 10px;
+}
+
+
+/* ==============================
+   CUSTOMER SERVICES
+   ============================== */
+
+body > table tr[bgcolor="yellow"] {
+    background-color: #ffeb3b;
+}
+
+body > table tr[bgcolor="yellow"] td {
+    padding: 20px;
+}
+
+body > table tr[bgcolor="yellow"] h3 {
+    margin: 0;
+    color: #333;
+}
+
+
+/* ==============================
+   FOOTER
+   ============================== */
+
+body > table tr:last-child {
+    background-color: #0D47A1;
+    color: white;
+}
+
+iframe {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+body > table tr:last-child h2 {
+    color: white;
+}
+
+body > table tr:last-child input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin: 4px;
+    border: none;
+    border-radius: 4px;
+}
+
+body > table tr:last-child input[type="submit"] {
+    margin-top: 8px;
+}
+
+
+/* ==============================
+   RESPONSIVE DESIGN
+   ============================== */
+
+@media screen and (max-width: 768px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    body > table {
+        width: 100%;
+    }
+
+    body > table tr td {
+        padding: 10px;
+    }
+
+    body > table tr:first-child input[type="text"] {
+        width: 55%;
+    }
+
+    body > table tr:first-child img {
+        width: 120px;
+    }
+
+    marquee img {
+        width: 350px;
+        height: 120px;
+    }
+
+    body > table img[src*="banner.png"] {
+        height: 180px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
